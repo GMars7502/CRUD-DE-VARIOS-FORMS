@@ -69,14 +69,14 @@
             // pacientesToolStripMenuItem1
             // 
             this.pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
-            this.pacientesToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.pacientesToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
             this.pacientesToolStripMenuItem1.Text = "Pacientes";
             this.pacientesToolStripMenuItem1.Click += new System.EventHandler(this.pacientesToolStripMenuItem1_Click);
             // 
             // citasToolStripMenuItem1
             // 
             this.citasToolStripMenuItem1.Name = "citasToolStripMenuItem1";
-            this.citasToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.citasToolStripMenuItem1.Size = new System.Drawing.Size(153, 26);
             this.citasToolStripMenuItem1.Text = "Citas";
             this.citasToolStripMenuItem1.Click += new System.EventHandler(this.citasToolStripMenuItem1_Click);
             // 
@@ -97,7 +97,7 @@
             this.aToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
             // 
             // crearToolStripMenuItem
@@ -128,7 +128,7 @@
             this.actualizarToolStripMenuItem,
             this.eliminarToolStripMenuItem1});
             this.citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            this.citasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.citasToolStripMenuItem.Size = new System.Drawing.Size(153, 26);
             this.citasToolStripMenuItem.Text = "Citas";
             // 
             // crearToolStripMenuItem1
