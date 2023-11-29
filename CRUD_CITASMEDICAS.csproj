@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05987C9B-232C-4B2F-A180-EF9F4F46FB46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CRUD_CITASMEDICAS</RootNamespace>
+    <AssemblyName>CRUD_CITASMEDICAS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CitasCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitasCreation.Designer.cs">
+      <DependentUpon>CitasCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CitasDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitasDelete.Designer.cs">
+      <DependentUpon>CitasDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CitasRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitasRead.Designer.cs">
+      <DependentUpon>CitasRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CitasUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitasUpdate.Designer.cs">
+      <DependentUpon>CitasUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Moldes\Citas.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Moldes\db.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Moldes\db.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Moldes\db.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Moldes\Pacientes.cs">
+      <DependentUpon>db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PanCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanCreation.Designer.cs">
+      <DependentUpon>PanCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanDelete.Designer.cs">
+      <DependentUpon>PanDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanRead.Designer.cs">
+      <DependentUpon>PanRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanUpdate.Designer.cs">
+      <DependentUpon>PanUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CitasCreation.resx">
+      <DependentUpon>CitasCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitasDelete.resx">
+      <DependentUpon>CitasDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitasRead.resx">
+      <DependentUpon>CitasRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitasUpdate.resx">
+      <DependentUpon>CitasUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanCreation.resx">
+      <DependentUpon>PanCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanDelete.resx">
+      <DependentUpon>PanDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanRead.resx">
+      <DependentUpon>PanRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanUpdate.resx">
+      <DependentUpon>PanUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Moldes\db.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>db.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Moldes\db.edmx.diagram">
+      <DependentUpon>db.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Moldes\db.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db.edmx</DependentUpon>
+      <LastGenOutput>db.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Moldes\db.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>db.edmx</DependentUpon>
+      <LastGenOutput>db.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
