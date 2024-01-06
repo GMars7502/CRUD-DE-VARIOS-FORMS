@@ -1,7 +1,7 @@
 
 
 # CRUD-DE-VARIOS-FORMS
-CRUD utilizado Entity Framework.Trabajo universitario de varios forms.ORM entity framework
+CRUD ultilizado Entity Framework.Trabajo universitario de varios forms.ORM entity framework
 
 
 
