@@ -1,7 +1,8 @@
 
 
 # CRUD-DE-VARIOS-FORMS
-Trabajo universitario de varios forms, utilizado Entity Framework.
+CRUD utilizado Entity Framework.Trabajo universitario de varios forms.ORM entity framework
+
 
 
 ## Requisitos del programa
